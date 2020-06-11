@@ -25,6 +25,18 @@
 # print(my_func(surname = 'Анонимов', name = 'Аноним', date = '2001', city = 'Кунашак', email = 'g@g.g',
 #               telephone = '8 800 2000 600'))
 
+#
+# def personal_func(**kwargs):
+#     return kwargs
+# print(personal_func(
+#     name = input('Имя'),
+#     surname = input("Фамилия"),
+#     birthday = input('Дата рождения'),
+#     city = input('Город'),
+#     email = input('email'),
+#     phone = input('Телефон'),
+#     )
+# )
 
 # 3. Реализовать функцию my_func(), которая принимает три позиционных аргумента,
 # и возвращает сумму наибольших двух аргументов.
@@ -40,6 +52,17 @@
 #     else:
 #         return b + c
 # print(my_func2(a,b,c))
+
+#Преподовательский вариант решения.
+
+# def my_func(num1,num2,num3):
+#     try:
+#         my_list = [num1,num2,num3]
+#         my_list.pop(my_list.index(min(my_list)))
+#         return sum(my_list)
+#     except TypeError:
+#         return 'Check number'
+# print(my_func(1,2,3))
 
 # 4. Программа принимает действительное положительное число x и целое отрицательное число y.
 # Необходимо выполнить возведение числа x в степень y.
@@ -106,3 +129,10 @@
 # В программу должна попадать строка из слов, разделенных пробелом.
 # Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки,
 # но каждое слово должно начинаться с заглавной буквы. Необходимо использовать написанную ранее функцию int_func().
+
+
+# def int_func(text):
+#     return text.title()
+# print(int_func('text'))
+# res_int_func = int_func('text bla text')
+# print(res_int_func)
